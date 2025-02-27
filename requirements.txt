@@ -1,0 +1,10 @@
+torch
+peft
+tensorboardX
+transformers
+lightning==2.0.1
+Pillow
+numpy
+gradio
+sentencepiece
+triton==2.3.1
