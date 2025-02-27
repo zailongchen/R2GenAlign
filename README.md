@@ -1,7 +1,7 @@
 # R2GenAlign: Bidirectional Visual-Textual Alignment for LLM-based Radiology Report Generation
 
 ## Introduction
-![overview](https://github.com/wang-zhanyu/R2GenGPT/blob/main/images/align.png)
+![overview]([https://github.com/wang-zhanyu/R2GenGPT/blob/main/images/align.png](https://github.com/zailongchen/R2GenAlign/blob/main/images/frame.png))
 
 ## Getting Started
 ### Installation
