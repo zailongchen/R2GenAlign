@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 IU-xray: you can download our preprocess annotation file from [here](https://drive.google.com/file/d/1OXETn7goaYFyFuCaXyfQ6pFC77XXX9EV/view?usp=sharing) and download the dataset from [here](https://drive.google.com/file/d/1c0BXEuDy8Cmm2jfN0YYGkQxFZd2ZIoLg/view)
 
-Mimic-cxr: you can download our preprocess annotation file from [here](https://drive.google.com/file/d/14689ztodTtrQJYs--ihB_hgsPMMNHX-H/view?usp=sharing) and download the images from [official website](https://physionet.org/content/mimic-cxr-jpg/2.0.0/)
+Mimic-cxr: you can download our preprocess annotation file from [here](https://drive.google.com/file/d/1D1BbsKd9R5npeDDkKDAV06mMYnLHwX2B/view?usp=sharing) and download the images from [official website](https://physionet.org/content/mimic-cxr-jpg/2.0.0/)
 
 After downloading the data, place it in the ./data folder.
 
