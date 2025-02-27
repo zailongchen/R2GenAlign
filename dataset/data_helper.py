@@ -20,7 +20,6 @@ class FieldParser:
         pixel_values = self.vit_feature_extractor(img, return_tensors="pt").pixel_values
         return pixel_values[0] 
 
-    # from https://github.com/cuhksz-nlp/R2Gen/blob/main/modules/tokenizers.py
     def clean_report(self, report):
         # clean Iu-xray reports
         if self.dataset == "iu_xray":
