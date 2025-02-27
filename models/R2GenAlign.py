@@ -3,7 +3,7 @@ import json
 import torch
 import torch.nn as nn
 import lightning.pytorch as pl
-from transformers import LlamaForCausalLM, LlamaTokenizer, BlipProcessor, BlipForConditionalGeneration, SwinModel, ViTMAEForPreTraining, AutoTokenizer, AutoModel
+from transformers import LlamaForCausalLM, LlamaTokenizer, SwinModel, AutoTokenizer, AutoModel
 from evalcap.bleu.bleu import Bleu
 from evalcap.rouge.rouge import Rouge
 from evalcap.cider.cider import Cider
@@ -113,7 +113,7 @@ class R2GenAlign(pl.LightningModule):
         scorers = [
             (Bleu(4), ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),
             (Rouge(), "ROUGE_L"),
-            # (Meteor(), "METEOR"),
+            (Meteor(), "METEOR"),
             (Cider(), "CIDEr")
         ]
         final_scores = {}
@@ -236,7 +236,7 @@ class R2GenAlign(pl.LightningModule):
         text_embeds, atts_text = self.encode_text(samples['report'],img_embeds.device)
 
         # compute the mse loss between the generated pseudo-visual embeddings and the extracted visual embeddings
-        wraped_text_embeds, wraped_atts_text = self.text_prompt_wrap(text_embeds, atts_text) # to generate CXR
+        wraped_text_embeds, wraped_atts_text = self.text_prompt_wrap(text_embeds, atts_text)
         
         inputs_embeds = torch.cat([bos_embeds, wraped_text_embeds, img_embeds], dim=1)
         attention_mask = torch.cat([atts_bos, wraped_atts_text, atts_img], dim=1)
