@@ -1,8 +1,8 @@
 #!/bin/bash
 
 dataset="mimic_cxr"
-annotation="/home/guest/czl/dataset/mimic_cxr/mimic_annotation_cxr_view.json"
-base_dir="/home/guest/czl/dataset/mimic_cxr/images"
+annotation="data/mimic_cxr/mimic_annotation_cxr_view.json"
+base_dir="data/mimic_cxr/images"
 # delta_file=""
 
 version="r2gen_align"

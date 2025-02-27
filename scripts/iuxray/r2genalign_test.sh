@@ -1,8 +1,8 @@
 #!/bin/bash
 
 dataset="iu_xray"
-annotation="/home/guest/czl/dataset/iu_xray/annotation_cxr_view.json"
-base_dir="/home/guest/czl/dataset/iu_xray/images"
+annotation="data/iu_xray/iuxray_annotation_cxr_view.json"
+base_dir="data/iu_xray/images"
 delta_file=""
 
 version="v1_test"

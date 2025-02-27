@@ -1,9 +1,9 @@
 #!/bin/bash
 
 dataset="iu_xray"
-annotation="/home/guest/czl/dataset/iu_xray/annotation_cxr_view.json"
-base_dir="/home/guest/czl/dataset/iu_xray/images"
-# delta_file="/home/guest/czl/R2GenExplore/save/mimic_cxr/report/report_bir2gen_mae_full_model/checkpoints/checkpoint_epoch4_step152316_bleu0.171899_cider0.251643_ori.pth"
+annotation="data/iu_xray/iuxray_annotation_cxr_view.json"
+base_dir="data/iu_xray/images"
+# delta_file=""
 
 version="r2gen_align"
 savepath="./save/$dataset/$version"
