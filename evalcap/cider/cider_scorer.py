@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# Tsung-Yi Lin <tl483@cornell.edu>
-# Ramakrishna Vedantam <vrama91@vt.edu>
 
 import copy
 from collections import defaultdict
@@ -25,7 +23,7 @@ def precook(s, n=4, out=False):
             counts[ngram] += 1
     return counts
 
-def cook_refs(refs, n=4): ## lhuang: oracle will call with "average"
+def cook_refs(refs, n=4): ## oracle will call with "average"
     '''Takes a list of reference sentences for a single segment
     and returns an object that encapsulates everything that BLEU
     needs to know about them.

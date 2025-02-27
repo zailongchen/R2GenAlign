@@ -2,10 +2,9 @@
 # 
 # File Name : rouge.py
 #
-# Description : Computes ROUGE-L metric as described by Lin and Hovey (2004)
+# Description : Computes ROUGE-L metric (2004)
 #
 # Creation Date : 2015-01-07 06:03
-# Author : Ramakrishna Vedantam <vrama91@vt.edu>
 
 import numpy as np
 import pdb
