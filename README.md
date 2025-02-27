@@ -25,16 +25,32 @@ Mimic-cxr: you can download our preprocess annotation file from [here](https://d
 
 After downloading the data, place it in the ./data folder.
 
-### Training (for MIMIC-CXR)
+### Training 
+
+For MIMIC-CXR
 
 ```bash
 bash scripts/mimic/r2genalign_train.sh
 ```
 
-### Testing (For MIMIC-CXR)
+For IU-Xray
+
+```bash
+bash scripts/iuxray/r2genalign_train.sh
+```
+
+### Testing
+
+For MIMIC-CXR
 
 ```bash
 bash scripts/mimic/r2genalign_test.sh
+```
+
+For IU-Xray
+
+```bash
+bash scripts/iuxray/r2genalign_test.sh
 ```
 
 ## Acknowledgement
