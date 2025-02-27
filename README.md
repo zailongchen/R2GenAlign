@@ -11,8 +11,8 @@
 Git clone our repository and install the requirements.
 
 ```bash
-https://github.com/wang-zhanyu/R2GenGPT.git
-cd R2GenGPT
+https://github.com/zailongchen/R2GenAlign.git
+cd R2GenAlign
 pip install -r requirements.txt
 ```
 
@@ -25,47 +25,17 @@ Mimic-cxr: you can download our preprocess annotation file from [here](https://d
 
 After downloading the data, place it in the ./data folder.
 
-### Training
-
-For shallow alignment
+### Training (for MIMIC-CXR)
 
 ```bash
-bash scripts/4-1.shallow_run.sh
-```
-
-For delta alignment
-
-```bash
-bash scripts/5-1.delta_run.sh
-```
-
-For deep alignment
-
-```bash
-bash scripts/6-1.deep_run.sh
+bash scripts/mimic/r2genalign_train.sh
 ```
 
 ### Testing (For MIMIC-CXR)
-You can download our pretrained Delta checkpoints for [Here](https://drive.google.com/drive/folders/1ywEITWfYIAAYy0VY1IZ24Ec_GoNmkqIY?usp=sharing)
-
-For shallow alignment
 
 ```bash
-bash scripts/4-2.shallow_test.sh
+bash scripts/mimic/r2genalign_test.sh
 ```
-
-For delta alignment
-
-```bash
-bash scripts/5-2.delta_test.sh
-```
-
-For deep alignment
-
-```bash
-bash scripts/6-2.shallow_test.sh
-```
-
 
 ## Acknowledgement
 
