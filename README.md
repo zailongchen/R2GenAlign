@@ -1,4 +1,4 @@
-# R2GenAlign: Bidirectional Visual-Textual Alignment for LLM-based Radiology Report Generation
+# Analyzing and Enhancing Visual Learning in LLM-based Radiology Report Generation
 
 ## Introduction
 ![overview](https://github.com/zailongchen/R2GenAlign/blob/main/images/framework.png)
